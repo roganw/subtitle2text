@@ -1,0 +1,111 @@
+1
+00:00:00,000 --> 00:00:01,410
+Any and every sensor,
+
+2
+00:00:01,410 --> 00:00:03,405
+whether related to perception or not,
+
+3
+00:00:03,405 --> 00:00:07,090
+measures some physical quantity either directly or indirectly.
+
+4
+00:00:07,090 --> 00:00:09,330
+But these measurements often deviate from
+
+5
+00:00:09,330 --> 00:00:12,875
+the ground truth due to factors like noise and distortion.
+
+6
+00:00:12,875 --> 00:00:15,210
+This inconsistency can be attributed to
+
+7
+00:00:15,210 --> 00:00:18,720
+the measurement system itself or external factors.
+
+8
+00:00:18,720 --> 00:00:20,385
+We can alleviate external noise,
+
+9
+00:00:20,385 --> 00:00:23,550
+to some extent, by using various filtering techniques.
+
+10
+00:00:23,550 --> 00:00:26,155
+But to remove systematic inconsistencies,
+
+11
+00:00:26,155 --> 00:00:29,390
+we first need to understand their origin or the root cause.
+
+12
+00:00:29,390 --> 00:00:33,330
+First of all, let me make it clear that no sensor is perfect.
+
+13
+00:00:33,330 --> 00:00:36,580
+We, humans, have flaws and so do the devices we create.
+
+14
+00:00:36,580 --> 00:00:39,525
+Two sensors from the same manufacturer may produce
+
+15
+00:00:39,525 --> 00:00:43,124
+slightly different results due to minor internal variations.
+
+16
+00:00:43,124 --> 00:00:46,245
+Many sensors show a change in response with changes
+
+17
+00:00:46,245 --> 00:00:49,680
+in weather conditions like temperature or humidity.
+
+18
+00:00:49,680 --> 00:00:54,330
+Moreover, some sensors drift naturally with time and, hence, are imprecise.
+
+19
+00:00:54,330 --> 00:00:56,195
+So, then, how do we deal with this mountain of
+
+20
+00:00:56,195 --> 00:00:59,935
+inconsistencies to obtain the best possible results?
+
+21
+00:00:59,935 --> 00:01:02,310
+The answer to that question is calibration.
+
+22
+00:01:02,310 --> 00:01:06,300
+Calibration at its core is the process of comparing two measurements,
+
+23
+00:01:06,300 --> 00:01:10,260
+a standard or ground truth and a measurement from the sensor being calibrated.
+
+24
+00:01:10,260 --> 00:01:11,959
+After the conversion is made,
+
+25
+00:01:11,959 --> 00:01:13,695
+we can adjust the sensor so that
+
+26
+00:01:13,695 --> 00:01:17,800
+its measurement matches the ground truth as closely as possible.
+
+27
+00:01:17,800 --> 00:01:20,310
+Next, you will learn in detail about different types of
+
+28
+00:01:20,310 --> 00:01:24,670
+calibration and perform a calibration of your RGB-D camera.

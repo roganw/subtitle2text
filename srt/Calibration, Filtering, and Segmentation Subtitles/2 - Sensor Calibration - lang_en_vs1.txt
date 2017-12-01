@@ -1,0 +1,28 @@
+Any and every sensor,
+whether related to perception or not,
+measures some physical quantity either directly or indirectly.
+But these measurements often deviate from
+the ground truth due to factors like noise and distortion.
+This inconsistency can be attributed to
+the measurement system itself or external factors.
+We can alleviate external noise,
+to some extent, by using various filtering techniques.
+But to remove systematic inconsistencies,
+we first need to understand their origin or the root cause.
+First of all, let me make it clear that no sensor is perfect.
+We, humans, have flaws and so do the devices we create.
+Two sensors from the same manufacturer may produce
+slightly different results due to minor internal variations.
+Many sensors show a change in response with changes
+in weather conditions like temperature or humidity.
+Moreover, some sensors drift naturally with time and, hence, are imprecise.
+So, then, how do we deal with this mountain of
+inconsistencies to obtain the best possible results?
+The answer to that question is calibration.
+Calibration at its core is the process of comparing two measurements,
+a standard or ground truth and a measurement from the sensor being calibrated.
+After the conversion is made,
+we can adjust the sensor so that
+its measurement matches the ground truth as closely as possible.
+Next, you will learn in detail about different types of
+calibration and perform a calibration of your RGB-D camera.

@@ -1,0 +1,59 @@
+1
+00:00:00,000 --> 00:00:02,840
+So now you have filtered your point cloud data and wrote
+
+2
+00:00:02,840 --> 00:00:06,355
+a RANSAC plane filtering algorithm to remove the table from your scene.
+
+3
+00:00:06,355 --> 00:00:10,940
+However, thus far, you have been relying solely on object shapes to perform segmentation.
+
+4
+00:00:10,940 --> 00:00:13,578
+That's right. Even though we've been dealing with point clouds,
+
+5
+00:00:13,578 --> 00:00:17,100
+your dataset still contains feature rich color information as well that can be
+
+6
+00:00:17,100 --> 00:00:21,485
+combined with your shape information to perform more complex segmentation tasks.
+
+7
+00:00:21,485 --> 00:00:25,440
+In this lesson, we'll be introducing a technique called Clustering that will
+
+8
+00:00:25,440 --> 00:00:30,150
+allow you to segment objects in your point cloud without having to assume a model shape.
+
+9
+00:00:30,150 --> 00:00:32,845
+In essence, this technique will allow you to find points in
+
+10
+00:00:32,845 --> 00:00:37,085
+your data set that are clustered together based on particular features.
+
+11
+00:00:37,085 --> 00:00:39,165
+These clusters could be based on color,
+
+12
+00:00:39,165 --> 00:00:42,870
+position, texture or a combination of many features.
+
+13
+00:00:42,870 --> 00:00:44,880
+Performing segmentation using clustering,
+
+14
+00:00:44,880 --> 00:00:46,200
+it gives you the freedom to discover
+
+15
+00:00:46,200 --> 00:00:49,220
+an arbitrary number of objects of any shape in your data.

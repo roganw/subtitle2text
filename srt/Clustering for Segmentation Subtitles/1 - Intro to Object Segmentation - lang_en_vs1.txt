@@ -1,0 +1,15 @@
+So now you have filtered your point cloud data and wrote
+a RANSAC plane filtering algorithm to remove the table from your scene.
+However, thus far, you have been relying solely on object shapes to perform segmentation.
+That's right. Even though we've been dealing with point clouds,
+your dataset still contains feature rich color information as well that can be
+combined with your shape information to perform more complex segmentation tasks.
+In this lesson, we'll be introducing a technique called Clustering that will
+allow you to segment objects in your point cloud without having to assume a model shape.
+In essence, this technique will allow you to find points in
+your data set that are clustered together based on particular features.
+These clusters could be based on color,
+position, texture or a combination of many features.
+Performing segmentation using clustering,
+it gives you the freedom to discover
+an arbitrary number of objects of any shape in your data.

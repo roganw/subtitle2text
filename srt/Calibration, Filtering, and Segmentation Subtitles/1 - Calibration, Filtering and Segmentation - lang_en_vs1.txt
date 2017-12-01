@@ -1,0 +1,20 @@
+Now that you had a chance to see how
+RGB-D cameras work and play with the data a little bit,
+we're going to dig deeper into how to make the most out of these feature rich data sets.
+First, we'll talk about sensor calibration, which is to say,
+calibrating how your camera sees the world around
+it in terms of geometry, distortion, and noise.
+Understanding your camera's calibration is crucial to
+understanding how you've measured data represents your actual physical surroundings.
+After that, we'll talk about filtering your data.
+With 3D point clouds,
+the majority of the data actually corresponds to unwanted background objects or
+other things that must be filtered out before you can
+perform object detection or recognition.
+Finally, we'll cover segmentation which is the process of breaking
+a filtered point cloud data into meaningful pieces
+each of which correspond to an object or class of objects in your data.
+You'll get a chance to work with the Random Sample Consensus or RANSAC algorithm which
+is a powerful way of performing
+segmentation in the presence of noise or outlier senior data.
+Great. Let's dive right in the calibration then.

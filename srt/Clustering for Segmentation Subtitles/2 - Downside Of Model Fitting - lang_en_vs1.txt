@@ -1,0 +1,23 @@
+So far you have filtered your point cloud data and you wrote
+a RANSAC plane-fitting algorithm to remove the table from your scene.
+Next you'll learn how to further segment the remaining data into meaningful pieces.
+From a technical perspective,
+RANSAC can be used to fit a variety of shaped models like cylinders,
+cubes or spheres; but in the scenario we're working with,
+you have a cluttered environment with little to
+no prior information about how many objects there may be in the scene.
+It's very likely that many of
+the tabletop objects may fit the same shape model as your target object.
+For example, if your target object were a can of soda,
+other cylindrical objects like a cup,
+a bottle or a pen holder may induce
+false positives if you were to rely solely on the RANSAC cylinder-fitting algorithm.
+Not only that, but your scene has objects of various shapes.
+If you were to model fit many shapes for removal,
+you'd be processing the entire point cloud of data many times;
+once for each model,
+which is not at all optimal.
+Instead we will now focus on other properties of our scene.
+Unlike a lighter or time-of-flight camera,
+an RGB-D camera provides us with data which is rich in features like colors and texture.
+In this lesson, you'll use these features to recognize the object you're looking for.

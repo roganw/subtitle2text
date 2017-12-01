@@ -1,0 +1,91 @@
+1
+00:00:00,000 --> 00:00:03,305
+So far you have filtered your point cloud data and you wrote
+
+2
+00:00:03,305 --> 00:00:06,920
+a RANSAC plane-fitting algorithm to remove the table from your scene.
+
+3
+00:00:06,920 --> 00:00:11,280
+Next you'll learn how to further segment the remaining data into meaningful pieces.
+
+4
+00:00:11,280 --> 00:00:13,674
+From a technical perspective,
+
+5
+00:00:13,674 --> 00:00:17,415
+RANSAC can be used to fit a variety of shaped models like cylinders,
+
+6
+00:00:17,415 --> 00:00:20,950
+cubes or spheres; but in the scenario we're working with,
+
+7
+00:00:20,950 --> 00:00:23,160
+you have a cluttered environment with little to
+
+8
+00:00:23,160 --> 00:00:27,055
+no prior information about how many objects there may be in the scene.
+
+9
+00:00:27,055 --> 00:00:28,410
+It's very likely that many of
+
+10
+00:00:28,410 --> 00:00:32,370
+the tabletop objects may fit the same shape model as your target object.
+
+11
+00:00:32,370 --> 00:00:35,170
+For example, if your target object were a can of soda,
+
+12
+00:00:35,170 --> 00:00:37,650
+other cylindrical objects like a cup,
+
+13
+00:00:37,650 --> 00:00:40,380
+a bottle or a pen holder may induce
+
+14
+00:00:40,380 --> 00:00:45,410
+false positives if you were to rely solely on the RANSAC cylinder-fitting algorithm.
+
+15
+00:00:45,410 --> 00:00:48,950
+Not only that, but your scene has objects of various shapes.
+
+16
+00:00:48,950 --> 00:00:51,195
+If you were to model fit many shapes for removal,
+
+17
+00:00:51,195 --> 00:00:55,280
+you'd be processing the entire point cloud of data many times;
+
+18
+00:00:55,280 --> 00:00:56,640
+once for each model,
+
+19
+00:00:56,640 --> 00:00:58,860
+which is not at all optimal.
+
+20
+00:00:58,860 --> 00:01:02,120
+Instead we will now focus on other properties of our scene.
+
+21
+00:01:02,120 --> 00:01:04,380
+Unlike a lighter or time-of-flight camera,
+
+22
+00:01:04,380 --> 00:01:10,100
+an RGB-D camera provides us with data which is rich in features like colors and texture.
+
+23
+00:01:10,100 --> 00:01:16,000
+In this lesson, you'll use these features to recognize the object you're looking for.

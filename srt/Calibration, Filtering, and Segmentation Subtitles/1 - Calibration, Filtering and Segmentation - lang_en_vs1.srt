@@ -1,0 +1,79 @@
+1
+00:00:00,000 --> 00:00:01,860
+Now that you had a chance to see how
+
+2
+00:00:01,860 --> 00:00:04,590
+RGB-D cameras work and play with the data a little bit,
+
+3
+00:00:04,590 --> 00:00:09,330
+we're going to dig deeper into how to make the most out of these feature rich data sets.
+
+4
+00:00:09,330 --> 00:00:12,825
+First, we'll talk about sensor calibration, which is to say,
+
+5
+00:00:12,825 --> 00:00:15,190
+calibrating how your camera sees the world around
+
+6
+00:00:15,190 --> 00:00:18,255
+it in terms of geometry, distortion, and noise.
+
+7
+00:00:18,255 --> 00:00:21,390
+Understanding your camera's calibration is crucial to
+
+8
+00:00:21,390 --> 00:00:26,010
+understanding how you've measured data represents your actual physical surroundings.
+
+9
+00:00:26,010 --> 00:00:28,650
+After that, we'll talk about filtering your data.
+
+10
+00:00:28,650 --> 00:00:29,965
+With 3D point clouds,
+
+11
+00:00:29,965 --> 00:00:33,870
+the majority of the data actually corresponds to unwanted background objects or
+
+12
+00:00:33,870 --> 00:00:35,880
+other things that must be filtered out before you can
+
+13
+00:00:35,880 --> 00:00:38,770
+perform object detection or recognition.
+
+14
+00:00:38,770 --> 00:00:42,570
+Finally, we'll cover segmentation which is the process of breaking
+
+15
+00:00:42,570 --> 00:00:45,450
+a filtered point cloud data into meaningful pieces
+
+16
+00:00:45,450 --> 00:00:49,710
+each of which correspond to an object or class of objects in your data.
+
+17
+00:00:49,710 --> 00:00:54,390
+You'll get a chance to work with the Random Sample Consensus or RANSAC algorithm which
+
+18
+00:00:54,390 --> 00:00:55,920
+is a powerful way of performing
+
+19
+00:00:55,920 --> 00:00:59,480
+segmentation in the presence of noise or outlier senior data.
+
+20
+00:00:59,480 --> 00:01:02,000
+Great. Let's dive right in the calibration then.
