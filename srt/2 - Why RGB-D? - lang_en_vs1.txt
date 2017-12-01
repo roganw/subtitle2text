@@ -1,0 +1,20 @@
+At this point you should have a sense of what type of
+3D perception sensors are used in robotics,
+along with some of their advantages and disadvantages.
+As I mentioned before among all the different 3D sensors,
+RGB-D cameras stand out as providing the best of both worlds.
+With the best of RGB-D camera that provides,
+a feature rich color video stream,
+and an active depth sensor,
+that provides a relatively accurate per pixel depth map for any given scene.
+In addition RGB-D cameras are typically cheaper than other 3D sensors like lidars,
+time of flight cameras,
+or even stereo cameras.
+Almost all RGB-D cameras have a USB based plug and play interface,
+making them easy to use and accessible to hobbyists, and experts alike.
+These sensors are perfect for applications
+like indoor autonomous navigation on a mobile robot,
+3-D workspace mapping with a robotic arm,
+object detection and tracking,
+facial recognition and much more.
+So let's explore 3-D perception techniques using RGB-D cameras.

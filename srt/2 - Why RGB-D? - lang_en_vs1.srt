@@ -1,0 +1,79 @@
+1
+00:00:00,000 --> 00:00:02,640
+At this point you should have a sense of what type of
+
+2
+00:00:02,640 --> 00:00:05,250
+3D perception sensors are used in robotics,
+
+3
+00:00:05,250 --> 00:00:08,620
+along with some of their advantages and disadvantages.
+
+4
+00:00:08,620 --> 00:00:12,000
+As I mentioned before among all the different 3D sensors,
+
+5
+00:00:12,000 --> 00:00:15,990
+RGB-D cameras stand out as providing the best of both worlds.
+
+6
+00:00:15,990 --> 00:00:18,540
+With the best of RGB-D camera that provides,
+
+7
+00:00:18,540 --> 00:00:20,415
+a feature rich color video stream,
+
+8
+00:00:20,415 --> 00:00:21,930
+and an active depth sensor,
+
+9
+00:00:21,930 --> 00:00:26,250
+that provides a relatively accurate per pixel depth map for any given scene.
+
+10
+00:00:26,250 --> 00:00:31,319
+In addition RGB-D cameras are typically cheaper than other 3D sensors like lidars,
+
+11
+00:00:31,319 --> 00:00:32,465
+time of flight cameras,
+
+12
+00:00:32,465 --> 00:00:34,185
+or even stereo cameras.
+
+13
+00:00:34,185 --> 00:00:38,270
+Almost all RGB-D cameras have a USB based plug and play interface,
+
+14
+00:00:38,270 --> 00:00:43,180
+making them easy to use and accessible to hobbyists, and experts alike.
+
+15
+00:00:43,180 --> 00:00:45,510
+These sensors are perfect for applications
+
+16
+00:00:45,510 --> 00:00:48,525
+like indoor autonomous navigation on a mobile robot,
+
+17
+00:00:48,525 --> 00:00:51,180
+3-D workspace mapping with a robotic arm,
+
+18
+00:00:51,180 --> 00:00:52,855
+object detection and tracking,
+
+19
+00:00:52,855 --> 00:00:55,405
+facial recognition and much more.
+
+20
+00:00:55,405 --> 00:00:59,130
+So let's explore 3-D perception techniques using RGB-D cameras.

@@ -1,0 +1,27 @@
+*.pyc
+yarn-error.log
+_modules
+changelog.sh
+.DS_Store
+.coverage
+_build
+_static
+_images
+_modules
+env_py3
+.eggs
+build
+*.db
+tmp
+# dist
+env
+app.db
+*.bak
+.idea
+*.sqllite
+.vscode
+.python-version
+npm-debug.log
+yarn.lock
+*.sublime-project
+*.sublime-workspace
